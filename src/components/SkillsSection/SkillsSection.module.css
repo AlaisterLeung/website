@@ -1,0 +1,114 @@
+.section {
+  padding-block: rem(64px) rem(96px);
+  color: var(--portfolio-color-fg-base);
+  background-color: var(--portfolio-color-bg-base);
+  border-top: 1px solid var(--portfolio-color-divider);
+}
+
+.stack {
+  font-family: var(--mantine-font-family-monospace);
+}
+
+.prompt {
+  color: var(--portfolio-color-fg-muted);
+}
+
+.title {
+  color: var(--portfolio-color-fg-strong);
+  font-family: var(--mantine-font-family-monospace);
+  font-size: clamp(rem(30px), 5vw, rem(44px));
+}
+
+.subtitle {
+  max-width: rem(680px);
+  color: var(--portfolio-color-fg-subtle);
+  font-size: var(--mantine-font-size-md);
+  line-height: 1.6;
+}
+
+.categoryCard {
+  border: 1px solid var(--portfolio-color-panel-border);
+  border-radius: rem(14px);
+  background: linear-gradient(
+    180deg,
+    var(--portfolio-color-panel-gradient-start-strong),
+    var(--portfolio-color-panel-gradient-end)
+  );
+}
+
+.prompt {
+  color: var(--portfolio-color-fg-muted);
+}
+
+.promptCategory,
+.promptIcon {
+  color: var(--skill-prompt-color, var(--portfolio-color-fg-bright));
+}
+
+.promptCategory {
+  font-size: var(--mantine-font-size-lg);
+  font-weight: 700;
+}
+
+.promptCategoryGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(4px);
+}
+
+.promptCategoryBlue {
+  --skill-prompt-color: var(--portfolio-color-blue-text);
+}
+
+.promptCategoryGreen {
+  --skill-prompt-color: var(--portfolio-color-green-text);
+}
+
+.promptCategoryOrange {
+  --skill-prompt-color: var(--portfolio-color-orange-text);
+}
+
+.promptCategoryPurple {
+  --skill-prompt-color: var(--portfolio-color-purple-text);
+}
+
+.promptIcon {
+  display: block;
+}
+
+.skillBadge {
+  border: 1px solid var(--portfolio-color-badge-border);
+  color: var(--portfolio-color-fg-emphasis);
+  background-color: var(--portfolio-color-panel-bg);
+  font-family: var(--mantine-font-family-monospace);
+  font-size: var(--mantine-font-size-sm);
+  text-transform: none;
+  height: auto;
+  min-height: rem(36px);
+  padding: rem(7px) rem(12px);
+}
+
+.skillBadge :global(.mantine-Badge-label) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+}
+
+.skillBadgeInner {
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+}
+
+.skillIcon {
+  display: block;
+  flex: 0 0 auto;
+  opacity: 0.9;
+}
+
+.skillLabel {
+  display: block;
+  line-height: 1;
+}

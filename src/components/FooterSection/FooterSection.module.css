@@ -1,0 +1,40 @@
+.footer {
+  padding-block: rem(28px) rem(44px);
+  color: var(--portfolio-color-fg-base);
+  background-color: var(--portfolio-color-bg-base);
+  border-top: 1px solid var(--portfolio-color-divider);
+}
+
+.line {
+  color: var(--portfolio-color-fg-soft);
+  font-family: var(--mantine-font-family-monospace);
+  font-size: var(--mantine-font-size-xs);
+}
+
+.heartIcon {
+  margin-inline: rem(2px);
+  vertical-align: -0.12em;
+  color: var(--portfolio-color-fg-love);
+}
+
+.sourceLink {
+  display: inline-block;
+  font-size: var(--mantine-font-size-xs);
+  margin-inline-start: rem(6px);
+  color: var(--portfolio-color-fg-accent);
+  transition:
+    color 140ms ease,
+    transform 140ms ease;
+
+  &:hover {
+    color: var(--portfolio-color-fg-accent-hover);
+    transform: translateY(rem(-1px));
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    display: block;
+    width: fit-content;
+    margin-top: rem(6px);
+    margin-inline-start: 0;
+  }
+}

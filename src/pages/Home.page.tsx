@@ -1,11 +1,13 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import { FooterSection } from '../components/FooterSection/FooterSection';
+import { HeaderSection } from '../components/HeaderSection/HeaderSection';
+import { SkillsSection } from '../components/SkillsSection/SkillsSection';
 
 export function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <HeaderSection />
+      <SkillsSection />
+      <FooterSection />
     </>
   );
 }
