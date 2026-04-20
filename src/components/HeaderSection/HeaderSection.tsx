@@ -102,7 +102,7 @@ export function HeaderSection() {
                   <span>GitHub</span>
                 </Anchor>
                 <Anchor
-                  href="https://www.linkedin.com/in/alaister-lj-leung-5427a6404/"
+                  href="https://www.linkedin.com/in/ljleung/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
